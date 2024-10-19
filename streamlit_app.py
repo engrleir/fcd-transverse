@@ -9,13 +9,13 @@ st.title("RCD Transverse Bar Designer for Rectangular Combined Footings")
 
 PI = 3.14159
 
-c = 400 # column dimension in mm
-d = 375 # effective depth
+c = st.number_input("Column Width, mm") # column dimension in mm
+d = st.number_input("Effective Depth, mm") # effective depth
 
-B = 3250 # Footing size
-W = c+d/2+240 # Effective width
+B = st.number_input("Footing Width, B, mm") # Footing size
+W = st.number_input("Effective Witdh, mm") # Effective width
 
-Pu = 1280e3 # Ultimate load of column
+Pu = st.number_input("Ultimate Column Load, kN")*1000 # Ultimate load of column
 
 st.write(f"W: {W} mm")
 
